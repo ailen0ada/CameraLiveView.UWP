@@ -7,7 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Compact">
+            <AppBarButton Icon="Play" Label="Start" Click="StartLiveView" />
+            <AppBarButton Icon="Stop" Label="Stop" Click="StopLiveView" />
+            <AppBarButton Icon="Camera" Label="Capture" Click="CaptureImage" />
+        </CommandBar>
+    </Page.BottomAppBar>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <CaptureElement x:Name="LiveView" Stretch="Uniform" />
     </Grid>
 </Page>
